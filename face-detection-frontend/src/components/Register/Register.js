@@ -23,7 +23,10 @@ const Register = ({ onRouteChange, loadUser }) => {
 
   const BACKEND_URL = "https://face-detection-lqou.onrender.com";
 
-  const onSubmitRegister = async () => {
+  const onSubmitRegister = async (event) => {
+
+    event.preventDefault();
+
 
     try{
         const response = await fetch(`${BACKEND_URL}/register`, {
@@ -69,7 +72,7 @@ const Register = ({ onRouteChange, loadUser }) => {
         }}
       >
         <h1>FACE DETECTION</h1>
-        <h5>Create Your Account 😆</h5>
+        <h5>Create Your Account😆</h5>
         <br />
         <h6 className="mb-4">{errorMessage}</h6>
         <form onSubmit={onSubmitRegister}>

@@ -17,7 +17,10 @@ const Signin = ({ onRouteChange, loadUser }) => {
 
   const BACKEND_URL = "https://face-detection-lqou.onrender.com";
 
-  const onSubmitSignIn = async () => {
+  const onSubmitSignIn = async (event) => {
+
+    event.preventDefault();
+
     console.log("🔹 email:", signInEmail);
     console.log("🔹 password:", signInPassword);
 
