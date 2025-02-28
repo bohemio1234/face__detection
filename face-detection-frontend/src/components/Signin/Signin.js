@@ -25,7 +25,7 @@ const Signin = ({ onRouteChange, loadUser }) => {
     console.log("🔹 password:", signInPassword);
 
     try {
-        const response = await fetch(`${BACKEND_URL}/register`, {
+        const response = await fetch(`${BACKEND_URL}/signin`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
