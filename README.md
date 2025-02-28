@@ -1,24 +1,21 @@
-# 😀 face__detection 
+# 😀 Face Detection
 
-🔗 **[Live Demo](https://your-deployed-site.com)**  
+🔗 **[Live Demo](https://facedetection-three.vercel.app/)**
 
-**FACE-DETECTION** is a full-stack web application that detects faces in uploaded images using Clarifai API.  
-It allows users to register, sign in, and track their image analysis history.  
+**Face Detection** is a **full-stack web application** that detects faces in uploaded images using the Clarifai API.
 
-**FACE-DETECTION**는 사용자가 업로드한 이미지에서 얼굴을 감지하는 **풀스택 웹 애플리케이션**입니다.  
-Clarifai API를 활용하여 얼굴을 감지하고, 사용자 인증 및 분석 이력을 추적할 수 있습니다.  
+**Face Detection**는 Clarifai API를 활용해 사용자가 업로드한 이미지에서 얼굴을 감지하는 **풀스택 웹 애플리케이션**입니다.
 
-**FACE-DETECTION**は、ユーザーがアップロードした画像の中から顔を検出する**フルスタックWebアプリケーション**です。  
-Clarifai APIを活用し、顔の検出、ユーザー認証、および分析履歴の追跡を行うことができます。 
+**Face Detection**は、Clarifai APIを活用して、ユーザーがアップロードした画像の中から顔を検出する**フルスタックWebアプリケーションです**。
 
 ---
 
-## 🛠 Tech Stack (기술 스택 / 技術スタック)  
+## 🛠 Tech Stack (기술 스택 / 技術スタック)
 
 ### **Frontend:**  
-- **React.js** - Component-based UI  
-- **Bootstrap** - Responsive design  
-- **Particles.js** - Background animation  
+- **React.js** - Component-based UI
+- **Bootstrap** - Responsive design
+- **Particles.js** - Background animation
 
 ### **Backend:**  
 - **Node.js & Express** - Server-side logic  
@@ -29,78 +26,66 @@ Clarifai APIを活用し、顔の検出、ユーザー認証、および分析�
 ### **API & Deployment:**  
 - **Clarifai API** - Face detection  
 - **Vercel** - Frontend deployment  
-- **Render / Railway** - Backend deployment  
-
----
-
----
-📌 Key Features (주요 기능 / 主な機能)
-
-✅ User Authentication: Register & Sign in 🔑
-✅ Face Detection: Detect faces using Clarifai API 🤖
-✅ History Tracking: Stores user image analysis count 📊
-✅ Modern UI: Responsive design with Bootstrap 🎨
-
-✅ 사용자 인증: 회원가입 및 로그인 🔑
-✅ 얼굴 감지: Clarifai API를 활용한 얼굴 탐지 🤖
-✅ 분석 이력 추적: 사용자의 분석 횟수 저장 📊
-✅ 현대적인 UI: Bootstrap을 활용한 반응형 디자인 🎨
-
-✅ ユーザー認証: ユーザー登録とログイン 🔑
-✅ 顔検出: Clarifai APIを使用した顔認識 🤖
-✅ 履歴追跡: 画像分析回数を記録 📊
-✅ モダンUI: Bootstrapを活用したレスポンシブデザイン 🎨
-## 🛠 Tech Stack (기술 스택 / 技術スタック)
-
-- **Frontend:** React, Bootstrap
-- **API:** JSONPlaceholder (Mock Data)
-- **Deployment:** Vercel
-
----
-
-## 🚀 Installation & Usage (설치 및 실행 방법 / インストールと実行方法)
-
-```sh
-git clone https://github.com/bohemio1234/SearchRobo.git
-cd SearchRobo
-npm install
-npm start
-```
+- **Render** - Backend deployment  
 
 ---
 
 ## 📌 Key Features (주요 기능 / 主な機能)
 
-✅ Filters robot data based on user input 🔍  
-✅ Loads user information using the JSONPlaceholder API 🌍  
-✅ Responsive UI with Bootstrap 🎨
+✅ **User Authentication**: Register & Sign in 🔑  
+✅ **Face Detection**: Detect faces using Clarifai API 🤖  
+✅ **History Tracking**: Stores user image analysis count 📊  
 
-✅ 사용자 입력을 기반으로 로봇 데이터 필터링 🔍  
-✅ JSONPlaceholder API를 사용한 사용자 정보 로드 🌍  
-✅ Bootstrap을 활용한 반응형 UI 🎨
 
-✅ ユーザー入力に基づくロボットデータのフィルタリング 🔍  
-✅ JSONPlaceholder APIを使用したユーザー情報のロード 🌍  
-✅ Bootstrapを活用したレスポンシブUI 🎨
+✅ **사용자 인증**: 회원가입 및 로그인 🔑  
+✅ **얼굴 감지**: Clarifai API를 활용한 얼굴 탐지 🤖  
+✅ **분석 이력 추적**: 사용자의 분석 횟수 저장 📊  
+
+✅ **ユーザー認証**: ユーザー登録とログイン 🔑  
+✅ **顔検出**: Clarifai APIを使用した顔認識 🤖  
+✅ **履歴追跡**: 画像分析回数を記録 📊  
+ 
 
 ---
+## 📚 What I Learned (배운 점 / 学んだこと)
 
-## 🔍 ETC (기타 학습 내용 / その他の学習内容)
+- 🎨 **부트스트랩 스타일링**  
+  - 기존보다 좀 더 부트스트랩을 활용하여 UI개선을 했다.
 
-- **HTML, CSS, Bootstrap, JavaScript, NPM, JSX, React, API 호출(`fetch`)**의 기본 개념을 학습했다.
+- 🔗 **프론트엔드와 백엔드 연결**  
+  - React에서 Fetch API를 사용하여 백엔드와 데이터를 주고받는 흐름을 알게됐다. (엔드포인트)
+  - Express.js와 PostgreSQL을 연결하고, Knex.js를 활용하여 데이터베이스와의 연동을 해보았다.
 
-- 초기에는 **클래스형 컴포넌트**로 코드를 작성했지만, 함수형 컴포넌트와 Hooks가 더 많이 쓰인다는 것을 알고 **함수형 컴포넌트로 리팩토링**했다.
+- 🛡️ **Authentication & Security**  
+  - `bcrypt-nodejs`를 활용하여 **비밀번호를 안전하게 해싱 및 저장**하는 방법을 배웠다. (bcrypt를 써야하긴 한다)
+  - 환경 변수를 활용하여 중요한 데이터를 숨기는 방법을 배웠다. (PAT키, PORT번호 등 중요한 데이터들)
 
-  - `componentDidMount`, `constructor()`, `super()`, `this` 같은 개념이 사라지면서 코드가 훨씬 간결하고 이해하기 쉬워졌다.
-  - 하지만, 클래스 컴포넌트에서 배운 개념들이 함수형에서도 적용된다는 점에서 학습에 큰 도움이 되었다.
+- 🚀 **Vercel & Render 배포**  
+  - **프론트엔드는 Vercel**, **백엔드는 Render**에 배포하여 배포된 서비스를 연결하였다.
 
-- **프로젝트 폴더 구조 정리 방법**과 **Git 기본 개념 및 Workflow**(`git init`, `git remote add origin` 등)를 학습했다.
+- 🔧 **Git & GitHub Workflow**  
+  - `.gitignore`을 설정하여 **불필요한 파일 업로드 방지**하는 걸 좀 해보았다. (생성 gitignore.io) 
+  - **하위 폴더에 `git init`을 잘못 실행하여 생겼던 서브모듈 이슈를 해결했다..
 
-- `.gitignore`을 활용하여 **불필요한 파일이 GitHub에 올라가지 않도록 설정하는 방법**을 익혔다.
+- 🖥️ **CORS 처리 & 프록시 서버 활용**  
+  - 다른 출처의 API를 호출할 때 발생하는 **CORS**를 다뤄보았다. Clarifai API를 프론트에서 요청하면 CORS에러가 나와서 서버에 직접 프록시서버를 만들고 API한테 데이터를 받아온 후 프론트에 전달하는 걸 구현해야 했다.
+  - **백엔드에서도 CORS문제로 cors 라이브러리를 설치해야 했다.
 
-- **README.md 작성법 및 Markdown 문법**을 익혀 깔끔하게 정리하는 방법, Vercel을 통해 쉽게 배포가 가능하다는 것도 배웠다.
+- 📝 **코드 리팩토링 & 가독성 개선**  
+  - `fetch()`, `then()` → **async/await 문법**으로 변경하니 가독성이 훨씬 더 좋고 에러처리가 쉬워짐을 알게 됬다. (Try-catch)
+  - 코드에서 **자잘한 공백, 오타**가 앞길을 계속 막았다. 더욱 신경써서 작성할 것.
+  - `setState(prev => {...})`를 활용하여 이전 상태(prevState)를 안전하게 유지하는 방법 학습.
 
-- **Shout out to Andrei!** 🎉
+- 🛠 **React에서 이벤트 처리 방식**  
+  - `<form onSubmit={handleSubmit}>`을 활용하여 **Enter 키로도 제출 가능**하게. 
+  - `<button type="submit">`을 설정하여 명확한 폼 제출 이벤트 처리.
+  - `onClick={onRouteChange}`는 즉시 실행됨 → `onClick={() => onRouteChange()}`처럼 콜백 형태로 전달해야 함.  
+
+- 🔄 **배포 후 변경 사항 반영 방법**  
+  - **Vercel에 배포된 후 백엔드 URL 변경** → 프론트엔드에서 `fetch("http://localhost:3000")`을 **Render에서 받은 배포된 URL로 변경**
+  - Vercel에도 백엔드 배포가 되는 줄 알았으나.. 프론트만 가능한 걸 알고 부랴부랴 Render을 찾아서 해봄. 검색해도 잘 안나왔지만 해결하니 너무 짜릿했음.
+
+---
 
 ---
 
