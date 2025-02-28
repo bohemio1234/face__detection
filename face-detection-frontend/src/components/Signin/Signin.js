@@ -15,13 +15,14 @@ const Signin = ({ onRouteChange, loadUser }) => {
     setSignInPassword(event.target.value);
   };
 
+  const BACKEND_URL = "https://face-detection-lqou.onrender.com";
 
   const onSubmitSignIn = async () => {
     console.log("🔹 email:", signInEmail);
     console.log("🔹 password:", signInPassword);
 
     try {
-        const response = await fetch("http://localhost:3000/signin", {
+        const response = await fetch(`${BACKEND_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

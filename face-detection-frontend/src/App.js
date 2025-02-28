@@ -58,6 +58,8 @@ function App() {
     setBox(box);
   };
 
+  const BACKEND_URL = "https://face-detection-lqou.onrender.com"
+
   const onButtonSubmit = async () => {
     if (!input.trim()) {
       setStatusMessage("Please put your URL");
@@ -69,7 +71,7 @@ function App() {
     setImageURL(input);
 
     try {
-      const response = await fetch("http://localhost:3000/clarifai", {
+      const response = await fetch(`${BACKEND_URL}/clarifai`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -89,7 +91,7 @@ function App() {
       displayFaceBox(calculateFaceLocation(result));
       setStatusMessage("✅ Face detected! 🥰");
 
-      const imageUpdateRes = await fetch("http://localhost:3000/image", {
+      const imageUpdateRes = await fetch(`${BACKEND_URL}/image`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: user.id }),
@@ -103,64 +105,6 @@ function App() {
     }
   };
 
-  //   const onButtonSubmit = () => {
-  //     if (!input.trim()) {
-  //       console.log("⚠️ please put your URL ");
-  //       return;
-  //     }
-  //     setBox({})
-
-  //     setStatusMessage("⏳ Analyzing the image…");
-  //     setImageURL(input);
-
-  //     fetch("http://localhost:3000/clarifai", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         user_app_id: {
-  //           user_id: "hccu8v4urskl",
-  //           app_id: "test",
-  //         },
-  //         inputs: [
-  //           {
-  //             data: {
-  //               image: {
-  //                 url: input,
-  //               },
-  //             },
-  //           },
-  //         ],
-  //       }),
-  //     })
-  //       .then((response) => response.json())
-  //       .then((result) => {
-  //         console.log(result);
-
-  //         if (result) {
-  //           fetch("http://localhost:3000/image", {
-  //             method: "PUT",
-  //             headers: { "Content-Type": "application/json" },
-  //             body: JSON.stringify({ id: user.id }),
-  //           })
-  //             .then((response) => response.json())
-  //             .then((count) => {
-  //               setUser((prevUser) => ({
-  //                 ...prevUser,
-  //                 entries: count,
-  //               }));
-  //             });
-  //         }
-
-  //         displayFaceBox(calculateFaceLocation(result));
-  //         setStatusMessage(" Face detected! 🥰");
-  //       })
-  //       .catch((error) => {
-  //         console.log("error", error);
-  //         setStatusMessage("No face detected. 😢");
-  //       });
-  //   };
 
   const onRouteChange = (route) => {
     if (route === "signout") {

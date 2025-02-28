@@ -21,10 +21,12 @@ const Register = ({ onRouteChange, loadUser }) => {
     setEmail(event.target.value);
   };
 
+  const BACKEND_URL = "https://face-detection-lqou.onrender.com";
+
   const onSubmitRegister = async () => {
 
     try{
-        const response = await fetch("http://localhost:3000/register", {
+        const response = await fetch(`${BACKEND_URL}/register`, {
             method: "post",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
